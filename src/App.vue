@@ -3,8 +3,22 @@
     <router-link to="/">Home</router-link> |
     <router-link to="/about">About</router-link>
   </div>
+  <div id="app">
+    <DrawTool />
+  </div>
   <router-view />
 </template>
+
+<script>
+import DrawTool from '@/components/DrawTool.vue'
+
+export default {
+  name: 'App',
+  components: {
+    DrawTool
+  }
+}
+</script>
 
 <style>
 #app {
